@@ -47,8 +47,9 @@ class SignupActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     //code for jumping to home activity
-                        addUserToDatabase(name, email, mAuth.currentUser?.uid!!)
+                    addUserToDatabase(name, email, mAuth.currentUser?.uid!!)
                     val intent = Intent(this,MainActivity::class.java)
+                    finish()
                     startActivity(intent)
                 } else {
                     Toast.makeText(this@SignupActivity,"Some error occurred",Toast.LENGTH_SHORT).show()
