@@ -8,7 +8,8 @@
             android:layout_height="wrap_content"
             android:text="Vallari"
             android:layout_marginTop="5dp"
-            android:textSize="30sp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginLeft="10dp"/>
 
