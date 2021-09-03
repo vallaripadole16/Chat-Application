@@ -24,7 +24,7 @@ class UserAdapter(val context: Context, val userList:ArrayList<HomeActivity>):Re
         holder.itemView.setOnClickListener{
             val intent = Intent(context,ChatActivity::class.java)
             intent.putExtra("name",currUser.name)
-            intent.putExtra("uid",FirebaseAuth.getInstance().currentUser?.uid)
+            intent.putExtra("uid",currUser.uid)
             context.startActivity(intent)
         }
     }
